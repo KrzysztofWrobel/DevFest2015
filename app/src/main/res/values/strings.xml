@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GripIt DevFest2015</string>
+    <string name="last_survey">Last survey feed:</string>
+    <string name="show_answers">Show surveys</string>
+    <string name="show_answers_format">Show surveys (%d)</string>
+    <string name="surveys_stats">Surveys Statistics</string>
+    <string name="about_gripit">About GripIt</string>
+    <string name="take_survey">Take survey</string>
+    <string name="gripit_tweeter"><u>\@Gripit_IO</u></string>
+    <string name="presenter_tweeter"><u>\@MrChrisWrobel</u></string>
+    <string name="survey_format" formatted="false">At %s \n%s, who %s a student, %s a startup and is mostly interested in %s took a survey.</string>
+    <string name="statistics">Statistics</string>
+    <string name="survey_list">Surveys list</string>
+    <string name="about_gripit_name">About GripIt</string>
+    <string name="main_title">Nie trać czasu tworząc Startup!</string>
+    <string name="main_subtitle">Krzysztof Wróbel</string>
+    <string name="author_name">Krzysztof Wróbel</string>
+</resources>

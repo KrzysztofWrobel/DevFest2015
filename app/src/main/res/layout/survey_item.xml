@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="survey"
+            type="io.gripit.presentation.models.SurveyAnswer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@{survey.modId == 0 ? @color/accent_3 : @color/accent_2}"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_last_survey_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/survey_format(survey.time, survey.name, survey.studentBlock, survey.startupBlock, survey.interest)}"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            tools:text="At 123123 Chris, who has a startup and is a student,took a survey" />
+
+    </LinearLayout>
+</layout>

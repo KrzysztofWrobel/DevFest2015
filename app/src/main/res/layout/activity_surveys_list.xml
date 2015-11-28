@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="surveysWrapper"
+            type="io.gripit.presentation.viewmodels.SurveysWrapper" />
+
+        <import type="me.tatarka.bindingcollectionadapter.LayoutManagers" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.SurveyListActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemView="@{surveysWrapper.surveyItemView}"
+            app:items="@{surveysWrapper.surveyAnswers}"
+            app:layoutManager="@{LayoutManagers.linear()}" />
+    </RelativeLayout>
+
+
+</layout>
